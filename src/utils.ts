@@ -1,4 +1,7 @@
-export function safelyDefine(elementName: string, customElement: CustomElementConstructor) {
+export function safelyDefine(
+  elementName: string,
+  customElement: CustomElementConstructor
+) {
   if (customElements.get(elementName)) {
     console.warn(`Trying to redefine ${elementName} skipping`);
     return;
@@ -7,12 +10,13 @@ export function safelyDefine(elementName: string, customElement: CustomElementCo
   return;
 }
 
-export function injectStyles(elementName: string, styles: string) {
+export function injectStyles(elementName: string, css: string) {
   const existingStyles = document.getElementById(elementName);
   if (!existingStyles) {
     const styleNode = document.createElement("style");
     styleNode.setAttribute("id", elementName);
-    styleNode.innerText = styles;
-    document.body.appendChild(styleNode);
+    styleNode.type = "text/css";
+    styleNode.appendChild(document.createTextNode(css));
+    document.head.appendChild(styleNode);
   }
 }

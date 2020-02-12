@@ -7,9 +7,10 @@
     "sourceMap": true,
     "allowJs": true,
     "noEmit": true,
-    "lib": ["es6", "dom"],
+    "lib": ["esnext", "dom"],
     "target": "esnext",
     "rootDir": "src",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "resolveJsonModule": true
   }
 }

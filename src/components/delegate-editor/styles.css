@@ -1,0 +1,15 @@
+.delegate-editor .bg-red {
+  background-color: #f45d79;
+}
+
+.delegate-editor .bg-blue {
+  background-color: #28a0cb;
+}
+
+.delegate-editor .text-red {
+  color: #f45d79;
+}
+
+.delegate-editor .text-blue {
+  color: #28a0cb;
+}

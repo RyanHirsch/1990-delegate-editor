@@ -1,15 +1,10 @@
-import { safelyDefine, injectStyles } from "../../utils";
+import { readFileSync } from "fs";
 import { Component, ConfigOptions, AttrsSchema, h } from "panel";
+import { safelyDefine, injectStyles } from "../../utils";
 
 import { DelegateEditorAttrs, DelegateEditorState } from "./types";
 
-const red = "#F45D79";
-const blue = "#28A0CB";
-const styles = `
-  .delegate-editor {
-    background-color: ${red};
-  }
-`;
+const styles = readFileSync(__dirname + "/styles.css", "utf8");
 
 export default class DelegateEditor extends Component<
   DelegateEditorState,
@@ -20,15 +15,26 @@ export default class DelegateEditor extends Component<
   static get attrsSchema(): AttrsSchema<DelegateEditorAttrs> {
     return {
       ...super.attrsSchema,
-      data: { type: `json`, default: {} },
+      data: { type: `json`, default: {} }
     };
   }
 
   get config(): ConfigOptions<DelegateEditorState, {}, DelegateEditorAttrs> {
     return {
-      template: () => h("div", { class: { "delegate-editor": true } }, "Example"),
+      template: ({ $attr }) =>
+        h(
+          "div",
+          { class: { "delegate-editor": true } },
+          Object.entries($attr("data")).map(([candidateKey, data]) =>
+            h(
+              "div",
+              { key: candidateKey, class: { "text-blue": true } },
+              candidateKey
+            )
+          )
+        ),
       defaultState: {},
-      helpers: {},
+      helpers: {}
     };
   }
 
