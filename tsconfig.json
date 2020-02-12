@@ -6,10 +6,9 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "allowJs": true,
-    "lib": [
-      "es6",
-      "dom"
-    ],
+    "noEmit": true,
+    "lib": ["es6", "dom"],
+    "target": "esnext",
     "rootDir": "src",
     "moduleResolution": "node"
   }

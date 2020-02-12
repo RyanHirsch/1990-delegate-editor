@@ -1,4 +1,4 @@
-export function safelyDefine(elementName: string, customElement: Function) {
+export function safelyDefine(elementName: string, customElement: CustomElementConstructor) {
   if (customElements.get(elementName)) {
     console.warn(`Trying to redefine ${elementName} skipping`);
     return;

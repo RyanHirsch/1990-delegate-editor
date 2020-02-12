@@ -5,13 +5,14 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build src/components/delegate-editor/index.ts"
   },
   "dependencies": {
     "panel": "2.6.0"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.6.1"
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.5"
   },
   "keywords": [
     "typescript",
