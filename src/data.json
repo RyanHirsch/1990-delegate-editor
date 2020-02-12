@@ -1,0 +1,116 @@
+{
+  "amy-klobuchar": {
+    "photo": "//1990to.win/assets/images/amy-klobuchar.jpg",
+    "projection": [{ "state": "new hampshire", "count": 5 }],
+    "delegates": [
+      {
+        "count": 1,
+        "state": "iowa"
+      }
+    ]
+  },
+  "andrew-yang": {
+    "photo": "//1990to.win/assets/images/andrew-yang.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ],
+    "suspended": "02/11/2020"
+  },
+  "bernie-sanders": {
+    "photo": "//1990to.win/assets/images/bernie-sanders.jpg",
+    "projection": [{ "state": "new hampshire", "count": 6 }],
+    "delegates": [
+      {
+        "count": 12,
+        "state": "iowa"
+      }
+    ]
+  },
+  "deval-patrick": {
+    "photo": "//1990to.win/assets/images/deval-patrick.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ]
+  },
+  "elizabeth-warren": {
+    "photo": "//1990to.win/assets/images/elizabeth-warren.jpg",
+    "delegates": [
+      {
+        "count": 8,
+        "state": "iowa"
+      }
+    ]
+  },
+  "joe-biden": {
+    "photo": "//1990to.win/assets/images/joe-biden.jpg",
+    "delegates": [
+      {
+        "count": 6,
+        "state": "iowa"
+      }
+    ]
+  },
+  "john-delaney": {
+    "photo": "//1990to.win/assets/images/john-delaney.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ],
+    "suspended": "01/31/2020"
+  },
+  "michael-bennet": {
+    "photo": "//1990to.win/assets/images/michael-bennet.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ],
+    "suspended": "02/11/2020"
+  },
+  "michael-bloomberg": {
+    "photo": "//1990to.win/assets/images/michael-bloomberg.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ]
+  },
+  "pete-buttigieg": {
+    "photo": "//1990to.win/assets/images/pete-buttigieg.jpg",
+    "projection": [{ "state": "new hampshire", "count": 5 }],
+    "delegates": [
+      {
+        "count": 14,
+        "state": "iowa"
+      }
+    ]
+  },
+  "tom-steyer": {
+    "photo": "//1990to.win/assets/images/tom-steyer.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ]
+  },
+  "tulsi-gabbard": {
+    "photo": "//1990to.win/assets/images/tulsi-gabbard.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ]
+  }
+}
